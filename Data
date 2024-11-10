@@ -1,0 +1,14 @@
+# Sample data (age, salary, buy)
+data = {
+    'age': [25, 30, 35, 40, 45, 50, 55, 60],
+    'salary': [50000, 60000, 65000, 70000, 80000, 120000, 150000, 200000],
+    'buy': [0, 0, 0, 1, 1, 1, 1, 1]  # 0 = No, 1 = Yes
+}
+
+# Create a DataFrame
+df = pd.DataFrame(data)
+
+# Split data into features (X) and target (y)
+X = df[['age', 'salary']]  # Features
+y = df['buy']  # Target variable
+
